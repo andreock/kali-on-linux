@@ -5,6 +5,7 @@ sudo apt update
 sudo sh -c "echo 'Package: *'>/etc/apt/preferences.d/kali.pref; echo 'Pin: release a=kali-rolling'>>/etc/apt/preferences.d/kali.pref; echo 'Pin-Priority: 50'>>/etc/apt/preferences.d/kali.pref"
 sudo apt update
 sudo apt install ace
+sudo apt install arp-scan
 sudo apt install dmitry
 sudo apt install ike-scan
 sudo apt install legion
