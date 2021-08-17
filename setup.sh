@@ -10,6 +10,7 @@ cd routersploit
 python3 -m pip install -r requirements.txt
 python3 rsf.py
 sudo apt install ace
+sudo apt install exploitdb
 sudo apt install arp-scan
 sudo apt install dmitry
 sudo apt install ike-scan
