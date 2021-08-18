@@ -1,5 +1,5 @@
 # Kali on Linux
-
+https://img.shields.io/github/downloads/Andrea055/kali-on-linux/total
 Kali on Linux(KOL) is a script to install kali tools on Ubuntu, Debian, derivatives and all operating systems that use apt (no arch linux for example, which use pacman)
 
 ## Usage
