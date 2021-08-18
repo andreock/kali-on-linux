@@ -9,7 +9,6 @@ sudo apt-get install git python3-pip
 git clone https://github.com/threat9/routersploit
 cd routersploit
 python3 -m pip install -r requirements.txt
-python3 rsf.py
 cd /tmp
 curl https://raw.githubusercontent.com/rapid7/metasploit-omnibus/master/config/templates/metasploit-framework-wrappers/msfupdate.erb > msfinstall
 chmod +x msfinstall
@@ -223,6 +222,6 @@ sudo apt install scrounge-ntfs
 sudo apt install cutycapt
 sudo apt install pipal
 sudo apt install recordmydesktop
-
+echo "routersploit find in /(scriptlocation)/routerspoit, to run it write python3 rsf.py"
 
 
