@@ -10,6 +10,11 @@ git clone https://github.com/threat9/routersploit
 cd routersploit
 python3 -m pip install -r requirements.txt
 python3 rsf.py
+cd /tmp
+curl https://raw.githubusercontent.com/rapid7/metasploit-omnibus/master/config/templates/metasploit-framework-wrappers/msfupdate.erb > msfinstall
+chmod +x msfinstall
+sudo ./msfinstall
+cd
 sudo apt install ace
 sudo apt install ipv6toolkit
 sudo apt install exploitdb
