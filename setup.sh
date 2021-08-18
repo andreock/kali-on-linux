@@ -4,6 +4,7 @@ sudo apt-key add archive-key.asc
 sudo apt update
 sudo sh -c "echo 'Package: *'>/etc/apt/preferences.d/kali.pref; echo 'Pin: release a=kali-rolling'>>/etc/apt/preferences.d/kali.pref; echo 'Pin-Priority: 50'>>/etc/apt/preferences.d/kali.pref"
 sudo apt update
+sudo apt install kali-menus
 sudo apt-get install git python3-pip
 git clone https://github.com/threat9/routersploit
 cd routersploit
