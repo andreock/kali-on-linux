@@ -4,8 +4,8 @@ sudo apt-key add archive-key.asc
 sudo apt update
 sudo sh -c "echo 'Package: *'>/etc/apt/preferences.d/kali.pref; echo 'Pin: release a=kali-rolling'>>/etc/apt/preferences.d/kali.pref; echo 'Pin-Priority: 50'>>/etc/apt/preferences.d/kali.pref"
 sudo apt update
-sudo apt install kali-menu
-sudo apt-get install git python3-pip
+sudo apt install kali-menu -y
+sudo apt-get install git python3-pip -y
 git clone https://github.com/threat9/routersploit
 cd routersploit
 python3 -m pip install -r requirements.txt
@@ -14,214 +14,214 @@ curl https://raw.githubusercontent.com/rapid7/metasploit-omnibus/master/config/t
 chmod +x msfinstall
 sudo ./msfinstall
 cd
-sudo apt install ace
-sudo apt install ipv6toolkit
-sudo apt install exploitdb
-sudo apt install arp-scan
-sudo apt install dmitry
-sudo apt install ike-scan
-sudo apt install legion
-sudo apt install maltego
-sudo apt install netdiscover
-sudo apt install p0f
-sudo apt install recon-ng
-sudo apt install spiderfoot
-sudo apt install dnsenum
-sudo apt install dnsmap
-sudo apt install dnsrecon
-sudo apt install dnstracer
-sudo apt install dnswalk
-sudo apt install fierce
-sudo apt install maltego
-sudo apt install spiderfoot
-sudo apt install twofi
-sudo apt install 0trace
-sudo apt install irpas
-sudo apt install netmask
-sudo apt install nbtscan
-sudo apt install smbmap
-sudo apt install smtp-user-enum
-sudo apt install swaks
-sudo apt install braa
-sudo apt install ssldump
-sudo apt install sslh
-sudo apt install sslscan
-sudo apt install tlssled
-sudo apt install arping
-sudo apt install fping
-sudo apt install hping3
-sudo apt install masscan
-sudo apt install unicornscan
-sudo apt install xprobe2
-sudo apt install lbd
-sudo apt install wafw00f
-sudo apt install lynis
-sudo apt install nikto
-sudo apt install dhcpig
-sudo apt install iaxflood
-sudo apt install siege
-sudo apt install t50
-sudo apt install cisco-auditing-tool
-sudo apt install cisco-global-exploiter
-sudo apt install cisco-ocs
-sudo apt install cisco-torch
-sudo apt install copy-router-config
-sudo apt install yersinia
-sudo apt install bed
-sudo apt install siparmyknife
-sudo apt install spike
-sudo apt install enumiax
-sudo apt install iaxflood
-sudo apt install rtpflood
-sudo apt install rtpinsertsound
-sudo apt install rtpmixsound
-sudo apt install sctpscan
-sudo apt install sipp
-sudo apt install burpsuite
-sudo apt install commix
-sudo apt install httrack.
-sudo apt install paros
-sudo apt install skipfish
-sudo apt install sqlmap
-sudo apt install webscarab
-sudo apt install apache-users
-sudo apt install cutycapt
-sudo apt install dirb
-sudo apt install dirbuster
-sudo apt install uniscan
-sudo apt install wfuzz
-sudo apt install jboss-autopwn
-sudo apt install joomscan
-sudo apt install plecost
-sudo apt install davtest
-sudo apt install jsql
-sudo apt install padbuster
-sudo apt install skipfish
-sudo apt install whatweb
-sudo apt install xsser
-sudo apt install mdb-sql
-sudo apt install oscanner
-sudo apt install sidguesser
-sudo apt install sqldic
-sudo apt install sqlmap
-sudo apt install sqlninja
-sudo apt install tnscmd10g
-sudo apt install cewl
-sudo apt install crunch
-sudo apt install hashcat
-sudo apt install john
-sudo apt install medusa
-sudo apt install ophcrack
-sudo apt install rainbowcrack
-sudo apt install rcracki-mt
-sudo apt install wordlists
-sudo apt install hydra
-sudo apt install patator
-sudo apt install thc-pptp-bruter
-sudo apt install chntpw
-sudo apt install cmospwd
-sudo apt install fcrackzip
-sudo apt install hashid
-sudo apt install hash-identifier
-sudo apt install ophcrack
-sudo apt install samdump2
-sudo apt install sipcrack
-sudo apt install sucrack
-sudo apt install smbmap
-sudo apt install rsmangler
-sudo apt install statsgen
-sudo apt install chirp
-sudo apt install cowpatty
-sudo apt install fern-wifi-cracker
-sudo apt install kismet
-sudo apt install mdk3
-sudo apt install mfoc
-sudo apt install mfterm
-sudo apt install pixiewps
-sudo apt install wifite
-sudo apt install hackrf
-sudo apt install bluelog
-sudo apt install blueranger
-sudo apt install bluesnarfer
-sudo apt install btscanner
-sudo apt install redfang
-sudo apt install spooftooph
-sudo apt install mfcuk
-sudo apt install asleap
-sudo apt install cowpatty
-sudo apt install eapmd5pass
-sudo apt install wifi-honey
-sudo apt install bytecode-viewer
-sudo apt install clang
-sudo apt install dex2jar
-sudo apt install edb-debugger
-sudo apt install jadx
-sudo apt install javasnoop
-sudo apt install radare2
-sudo apt install beef
-sudo apt install sqlmap
-sudo apt install termineter
-sudo apt install driftnet
-sudo apt install ettercap-graphical
-sudo apt install macchanger
-sudo apt install mitmproxy
-sudo apt install netsniff-ng
-sudo apt install responder
-sudo apt install wireshark
-sudo apt install darkstat
-sudo apt install dnschef
-sudo apt install dsniff
-sudo apt install hexinject
-sudo apt install sslsniff
-sudo apt install tcpflow
-sudo apt install rebind
-sudo apt install sniffjoke
-sudo apt install sslsplit
-sudo apt install tcpreplay
-sudo apt install yersinia
-sudo apt install backdoor-factory
-sudo apt install nishang
-sudo apt install proxychains4
-sudo apt install weevely
-sudo apt install cymothoa
-sudo apt install sbd
-sudo apt install laudanum
-sudo apt install iodine
-sudo apt install miredo
-sudo apt install proxytunnel
-sudo apt install pwnat
-sudo apt install sslh
-sudo apt install stunnel4
-sudo apt install udptunnel
-sudo apt install autopsy
-sudo apt install binwalk
-sudo apt install chkrootkit
-sudo apt install foremost
-sudo apt install galleta
-sudo apt install hashdeep
-sudo apt install dc3dd
-sudo apt install dcfldd
-sudo apt install extundelete
-sudo apt install missidentify
-sudo apt install pst-utils
-sudo apt install reglookup
-sudo apt install ddrescue
-sudo apt install guymager
-sudo apt install pdfid
-sudo apt install pdf-parser
-sudo apt install foremost
-sudo apt install magicrescue
-sudo apt install pasco
-sudo apt install pev
-sudo apt install recoverjpeg
-sudo apt install rifiuti
-sudo apt install rifiuti2
-sudo apt install safecopy
-sudo apt install calpel
-sudo apt install scrounge-ntfs
-sudo apt install cutycapt
-sudo apt install pipal
-sudo apt install recordmydesktop
+sudo apt install ace -y
+sudo apt install ipv6toolkit -y
+sudo apt install exploitdb -y
+sudo apt install arp-scan -y
+sudo apt install dmitry -y
+sudo apt install ike-scan -y
+sudo apt install legion -y
+sudo apt install maltego -y
+sudo apt install netdiscover -y
+sudo apt install p0f -y
+sudo apt install recon-ng -y
+sudo apt install spiderfoot -y
+sudo apt install dnsenum -y
+sudo apt install dnsmap -y
+sudo apt install dnsrecon -y
+sudo apt install dnstracer -y
+sudo apt install dnswalk -y
+sudo apt install fierce -y
+sudo apt install maltego -y
+sudo apt install spiderfoot -y
+sudo apt install twofi -y
+sudo apt install 0trace -y
+sudo apt install irpas -y
+sudo apt install netmask -y
+sudo apt install nbtscan -y
+sudo apt install smbmap -y
+sudo apt install smtp-user-enum -y
+sudo apt install swaks -y
+sudo apt install braa -y
+sudo apt install ssldump -y
+sudo apt install sslh -y
+sudo apt install sslscan -y
+sudo apt install tlssled -y
+sudo apt install arping -y
+sudo apt install fping -y
+sudo apt install hping3 -y
+sudo apt install masscan -y
+sudo apt install unicornscan -y
+sudo apt install xprobe2 -y
+sudo apt install lbd -y
+sudo apt install wafw00f -y
+sudo apt install lynis -y
+sudo apt install nikto -y
+sudo apt install dhcpig -y
+sudo apt install iaxflood -y
+sudo apt install siege -y
+sudo apt install t50 -y
+sudo apt install cisco-auditing-tool -y
+sudo apt install cisco-global-exploiter -y
+sudo apt install cisco-ocs -y
+sudo apt install cisco-torch -y
+sudo apt install copy-router-config -y
+sudo apt install yersinia -y
+sudo apt install bed -y
+sudo apt install siparmyknife -y
+sudo apt install spike -y
+sudo apt install enumiax -y
+sudo apt install iaxflood -y
+sudo apt install rtpflood -y
+sudo apt install rtpinsertsound -y
+sudo apt install rtpmixsound -y
+sudo apt install sctpscan -y
+sudo apt install sipp -y
+sudo apt install burpsuite -y
+sudo apt install commix -y
+sudo apt install httrack. -y
+sudo apt install paros -y
+sudo apt install skipfish -y
+sudo apt install sqlmap -y
+sudo apt install webscarab -y
+sudo apt install apache-users -y
+sudo apt install cutycapt -y
+sudo apt install dirb -y
+sudo apt install dirbuster -y
+sudo apt install uniscan -y
+sudo apt install wfuzz -y
+sudo apt install jboss-autopwn -y
+sudo apt install joomscan -y
+sudo apt install plecost -y
+sudo apt install davtest -y
+sudo apt install jsql -y
+sudo apt install padbuster -y
+sudo apt install skipfish -y
+sudo apt install whatweb -y
+sudo apt install xsser -y
+sudo apt install mdb-sql -y
+sudo apt install oscanner -y
+sudo apt install sidguesser -y
+sudo apt install sqldic -y
+sudo apt install sqlmap -y
+sudo apt install sqlninja -y
+sudo apt install tnscmd10g -y
+sudo apt install cewl -y
+sudo apt install crunch -y
+sudo apt install hashcat -y
+sudo apt install john -y
+sudo apt install medusa -y
+sudo apt install ophcrack -y
+sudo apt install rainbowcrack -y
+sudo apt install rcracki-mt -y
+sudo apt install wordlists -y
+sudo apt install hydra -y
+sudo apt install patator -y
+sudo apt install thc-pptp-bruter -y
+sudo apt install chntpw -y
+sudo apt install cmospwd -y
+sudo apt install fcrackzip -y
+sudo apt install hashid -y
+sudo apt install hash-identifier -y
+sudo apt install ophcrack -y
+sudo apt install samdump2 -y
+sudo apt install sipcrack -y
+sudo apt install sucrack -y
+sudo apt install smbmap -y
+sudo apt install rsmangler -y
+sudo apt install statsgen -y
+sudo apt install chirp -y
+sudo apt install cowpatty -y
+sudo apt install fern-wifi-cracker -y
+sudo apt install kismet -y
+sudo apt install mdk3 -y
+sudo apt install mfoc -y
+sudo apt install mfterm -y
+sudo apt install pixiewps -y
+sudo apt install wifite -y
+sudo apt install hackrf -y
+sudo apt install bluelog -y
+sudo apt install blueranger -y
+sudo apt install bluesnarfer -y
+sudo apt install btscanner -y
+sudo apt install redfang -y
+sudo apt install spooftooph -y
+sudo apt install mfcuk -y
+sudo apt install asleap -y
+sudo apt install cowpatty -y
+sudo apt install eapmd5pass -y
+sudo apt install wifi-honey -y
+sudo apt install bytecode-viewer -y
+sudo apt install clang -y
+sudo apt install dex2jar -y
+sudo apt install edb-debugger -y
+sudo apt install jadx -y
+sudo apt install javasnoop -y
+sudo apt install radare2 -y
+sudo apt install beef -y
+sudo apt install sqlmap -y
+sudo apt install termineter -y
+sudo apt install driftnet -y
+sudo apt install ettercap-graphical -y
+sudo apt install macchanger -y
+sudo apt install mitmproxy -y
+sudo apt install netsniff-ng -y
+sudo apt install responder -y
+sudo apt install wireshark -y
+sudo apt install darkstat -y
+sudo apt install dnschef -y
+sudo apt install dsniff -y
+sudo apt install hexinject -y
+sudo apt install sslsniff -y
+sudo apt install tcpflow -y
+sudo apt install rebind -y
+sudo apt install sniffjoke -y
+sudo apt install sslsplit -y
+sudo apt install tcpreplay -y
+sudo apt install yersinia -y
+sudo apt install backdoor-factory -y
+sudo apt install nishang -y
+sudo apt install proxychains4 -y
+sudo apt install weevely -y
+sudo apt install cymothoa -y
+sudo apt install sbd -y
+sudo apt install laudanum -y
+sudo apt install iodine -y
+sudo apt install miredo -y
+sudo apt install proxytunnel -y
+sudo apt install pwnat -y
+sudo apt install sslh -y
+sudo apt install stunnel4 -y
+sudo apt install udptunnel -y
+sudo apt install autopsy -y
+sudo apt install binwalk -y
+sudo apt install chkrootkit -y
+sudo apt install foremost -y
+sudo apt install galleta -y
+sudo apt install hashdeep -y
+sudo apt install dc3dd -y
+sudo apt install dcfldd -y
+sudo apt install extundelete -y
+sudo apt install missidentify -y
+sudo apt install pst-utils -y
+sudo apt install reglookup -y
+sudo apt install ddrescue -y
+sudo apt install guymager -y
+sudo apt install pdfid -y
+sudo apt install pdf-parser -y
+sudo apt install foremost -y
+sudo apt install magicrescue -y
+sudo apt install pasco -y
+sudo apt install pev -y
+sudo apt install recoverjpeg -y
+sudo apt install rifiuti -y
+sudo apt install rifiuti2 -y
+sudo apt install safecopy -y
+sudo apt install calpel -y
+sudo apt install scrounge-ntfs -y
+sudo apt install cutycapt -y
+sudo apt install pipal -y
+sudo apt install recordmydesktop -y
 echo "routersploit find in /(scriptlocation)/routerspoit, to run it write python3 rsf.py"
 
 
