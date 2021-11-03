@@ -18,7 +18,7 @@ Remember, you don't have Kali Linux kernel with this script, install only tools.
 Pull requests are welcome. For add missing packages, please open an issue first so I can try the change.
 
 ## Tested 
-Tested on Ubunutu 18.04(Zorin OS), 20.04, 21.10
+Tested on Ubuntu 18.04(Zorin OS), 20.04, 21.10
 Tested on Debian 11
 
 ## License
