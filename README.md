@@ -7,7 +7,7 @@ Kali on Linux(KOL) is a script to install kali tools on Ubuntu, Debian, derivati
 
 ```bash
 git clone https://github.com/Andrea055/kali-on-ubuntu.git
-cd kali-on-linux
+cd kali-on-ubuntu
 sudo chmod a+x setup.sh 
 ./setup.sh
 ```
