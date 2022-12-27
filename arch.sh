@@ -1,0 +1,233 @@
+function install_metasploit() {
+    git clone https://github.com/threat9/routersploit
+    cd routersploit
+    python3 -m pip install -r requirements.txt
+    cd /tmp
+    curl https://raw.githubusercontent.com/rapid7/metasploit-omnibus/master/config/templates/metasploit-framework-wrappers/msfupdate.erb > msfinstall
+    chmod +x msfinstall
+    sudo ./msfinstall
+    cd
+}
+
+function add_repos() {
+    echo "Installing blackarch repo..."
+    curl -O https://blackarch.org/strap.sh
+    bash strap.sh
+}
+
+function install_arch() {
+    add_repos
+    install_metasploit
+    sudo pacman -Sy aircrack-ng --noconfirm
+    sudo pacman -Sy wpscan --noconfirm
+    sudo pacman -Sy nmap --noconfirm
+    sudo pacman -Sy ace --noconfirm
+    sudo pacman -Sy ipv6toolkit --noconfirm
+    sudo pacman -Sy exploitdb --noconfirm
+    sudo pacman -Sy arp-scan --noconfirm
+    sudo pacman -Sy dmitry --noconfirm
+    sudo pacman -Sy ike-scan --noconfirm
+    sudo pacman -Sy legion --noconfirm
+    sudo pacman -Sy maltego --noconfirm
+    sudo pacman -Sy netdiscover --noconfirm
+    sudo pacman -Sy p0f --noconfirm
+    sudo pacman -Sy recon-ng --noconfirm
+    sudo pacman -Sy spiderfoot --noconfirm
+    sudo pacman -Sy dnsenum --noconfirm
+    sudo pacman -Sy dnsmap --noconfirm
+    sudo pacman -Sy dnsrecon --noconfirm
+    sudo pacman -Sy dnstracer --noconfirm
+    sudo pacman -Sy dnswalk --noconfirm
+    sudo pacman -Sy fierce --noconfirm
+    sudo pacman -Sy maltego --noconfirm
+    sudo pacman -Sy spiderfoot --noconfirm
+    sudo pacman -Sy twofi --noconfirm
+    sudo pacman -Sy 0trace --noconfirm
+    sudo pacman -Sy irpas --noconfirm
+    sudo pacman -Sy netmask --noconfirm
+    sudo pacman -Sy nbtscan --noconfirm
+    sudo pacman -Sy smbmap --noconfirm
+    sudo pacman -Sy smtp-user-enum --noconfirm
+    sudo pacman -Sy swaks --noconfirm
+    sudo pacman -Sy braa --noconfirm
+    sudo pacman -Sy ssldump --noconfirm
+    sudo pacman -Sy sslh --noconfirm
+    sudo pacman -Sy sslscan --noconfirm
+    sudo pacman -Sy tlssled --noconfirm
+    sudo pacman -Sy arping --noconfirm
+    sudo pacman -Sy fping --noconfirm
+    sudo pacman -Sy hping3 --noconfirm
+    sudo pacman -Sy masscan --noconfirm
+    sudo pacman -Sy unicornscan --noconfirm
+    sudo pacman -Sy xprobe2 --noconfirm
+    sudo pacman -Sy lbd --noconfirm
+    sudo pacman -Sy wafw00f --noconfirm
+    sudo pacman -Sy lynis --noconfirm
+    sudo pacman -Sy nikto --noconfirm
+    sudo pacman -Sy dhcpig --noconfirm
+    sudo pacman -Sy iaxflood --noconfirm
+    sudo pacman -Sy siege --noconfirm
+    sudo pacman -Sy t50 --noconfirm
+    sudo pacman -Sy cisco-auditing-tool --noconfirm
+    sudo pacman -Sy cisco-global-exploiter --noconfirm
+    sudo pacman -Sy cisco-ocs --noconfirm
+    sudo pacman -Sy cisco-torch --noconfirm
+    sudo pacman -Sy copy-router-config --noconfirm
+    sudo pacman -Sy yersinia --noconfirm
+    sudo pacman -Sy bed --noconfirm
+    sudo pacman -Sy siparmyknife --noconfirm
+    sudo pacman -Sy spike --noconfirm
+    sudo pacman -Sy enumiax --noconfirm
+    sudo pacman -Sy iaxflood --noconfirm
+    sudo pacman -Sy rtpflood --noconfirm
+    sudo pacman -Sy rtpinsertsound --noconfirm
+    sudo pacman -Sy rtpmixsound --noconfirm
+    sudo pacman -Sy sctpscan --noconfirm
+    sudo pacman -Sy sipp --noconfirm
+    sudo pacman -Sy burpsuite --noconfirm
+    sudo pacman -Sy commix --noconfirm
+    sudo pacman -Sy httrack. --noconfirm
+    sudo pacman -Sy paros --noconfirm
+    sudo pacman -Sy skipfish --noconfirm
+    sudo pacman -Sy sqlmap --noconfirm
+    sudo pacman -Sy webscarab --noconfirm
+    sudo pacman -Sy apache-users --noconfirm
+    sudo pacman -Sy cutycapt --noconfirm
+    sudo pacman -Sy dirb --noconfirm
+    sudo pacman -Sy dirbuster --noconfirm
+    sudo pacman -Sy uniscan --noconfirm
+    sudo pacman -Sy wfuzz --noconfirm
+    sudo pacman -Sy jboss-autopwn --noconfirm
+    sudo pacman -Sy joomscan --noconfirm
+    sudo pacman -Sy plecost --noconfirm
+    sudo pacman -Sy davtest --noconfirm
+    sudo pacman -Sy jsql --noconfirm
+    sudo pacman -Sy padbuster --noconfirm
+    sudo pacman -Sy skipfish --noconfirm
+    sudo pacman -Sy whatweb --noconfirm
+    sudo pacman -Sy xsser --noconfirm
+    sudo pacman -Sy mdb-sql --noconfirm
+    sudo pacman -Sy oscanner --noconfirm
+    sudo pacman -Sy sidguesser --noconfirm
+    sudo pacman -Sy sqldic --noconfirm
+    sudo pacman -Sy sqlmap --noconfirm
+    sudo pacman -Sy sqlninja --noconfirm
+    sudo pacman -Sy tnscmd10g --noconfirm
+    sudo pacman -Sy cewl --noconfirm
+    sudo pacman -Sy crunch --noconfirm
+    sudo pacman -Sy hashcat --noconfirm
+    sudo pacman -Sy john --noconfirm
+    sudo pacman -Sy medusa --noconfirm
+    sudo pacman -Sy ophcrack --noconfirm
+    sudo pacman -Sy rainbowcrack --noconfirm
+    sudo pacman -Sy rcracki-mt --noconfirm
+    sudo pacman -Sy wordlists --noconfirm
+    sudo pacman -Sy hydra --noconfirm
+    sudo pacman -Sy patator --noconfirm
+    sudo pacman -Sy thc-pptp-bruter --noconfirm
+    sudo pacman -Sy chntpw --noconfirm
+    sudo pacman -Sy cmospwd --noconfirm
+    sudo pacman -Sy fcrackzip --noconfirm
+    sudo pacman -Sy hashid --noconfirm
+    sudo pacman -Sy hash-identifier --noconfirm
+    sudo pacman -Sy ophcrack --noconfirm
+    sudo pacman -Sy samdump2 --noconfirm
+    sudo pacman -Sy sipcrack --noconfirm
+    sudo pacman -Sy sucrack --noconfirm
+    sudo pacman -Sy smbmap --noconfirm
+    sudo pacman -Sy rsmangler --noconfirm
+    sudo pacman -Sy statsgen --noconfirm
+    sudo pacman -Sy chirp --noconfirm
+    sudo pacman -Sy cowpatty --noconfirm
+    sudo pacman -Sy fern-wifi-cracker --noconfirm
+    sudo pacman -Sy kismet --noconfirm
+    sudo pacman -Sy mdk3 --noconfirm
+    sudo pacman -Sy mfoc --noconfirm
+    sudo pacman -Sy mfterm --noconfirm
+    sudo pacman -Sy pixiewps --noconfirm
+    sudo pacman -Sy wifite --noconfirm
+    sudo pacman -Sy hackrf --noconfirm
+    sudo pacman -Sy bluelog --noconfirm
+    sudo pacman -Sy blueranger --noconfirm
+    sudo pacman -Sy bluesnarfer --noconfirm
+    sudo pacman -Sy btscanner --noconfirm
+    sudo pacman -Sy redfang --noconfirm
+    sudo pacman -Sy spooftooph --noconfirm
+    sudo pacman -Sy mfcuk --noconfirm
+    sudo pacman -Sy asleap --noconfirm
+    sudo pacman -Sy cowpatty --noconfirm
+    sudo pacman -Sy eapmd5pass --noconfirm
+    sudo pacman -Sy wifi-honey --noconfirm
+    sudo pacman -Sy bytecode-viewer --noconfirm
+    sudo pacman -Sy clang --noconfirm
+    sudo pacman -Sy dex2jar --noconfirm
+    sudo pacman -Sy edb-debugger --noconfirm
+    sudo pacman -Sy jadx --noconfirm
+    sudo pacman -Sy javasnoop --noconfirm
+    sudo pacman -Sy radare2 --noconfirm
+    sudo pacman -Sy beef --noconfirm
+    sudo pacman -Sy sqlmap --noconfirm
+    sudo pacman -Sy termineter --noconfirm
+    sudo pacman -Sy driftnet --noconfirm
+    sudo pacman -Sy ettercap-graphical --noconfirm
+    sudo pacman -Sy macchanger --noconfirm
+    sudo pacman -Sy mitmproxy --noconfirm
+    sudo pacman -Sy netsniff-ng --noconfirm
+    sudo pacman -Sy responder --noconfirm
+    sudo pacman -Sy wireshark --noconfirm
+    sudo pacman -Sy darkstat --noconfirm
+    sudo pacman -Sy dnschef --noconfirm
+    sudo pacman -Sy dsniff --noconfirm
+    sudo pacman -Sy hexinject --noconfirm
+    sudo pacman -Sy sslsniff --noconfirm
+    sudo pacman -Sy tcpflow --noconfirm
+    sudo pacman -Sy rebind --noconfirm
+    sudo pacman -Sy sniffjoke --noconfirm
+    sudo pacman -Sy sslsplit --noconfirm
+    sudo pacman -Sy tcpreplay --noconfirm
+    sudo pacman -Sy yersinia --noconfirm
+    sudo pacman -Sy backdoor-factory --noconfirm
+    sudo pacman -Sy nishang --noconfirm
+    sudo pacman -Sy proxychains4 --noconfirm
+    sudo pacman -Sy weevely --noconfirm
+    sudo pacman -Sy cymothoa --noconfirm
+    sudo pacman -Sy sbd --noconfirm
+    sudo pacman -Sy laudanum --noconfirm
+    sudo pacman -Sy iodine --noconfirm
+    sudo pacman -Sy miredo --noconfirm
+    sudo pacman -Sy proxytunnel --noconfirm
+    sudo pacman -Sy pwnat --noconfirm
+    sudo pacman -Sy sslh --noconfirm
+    sudo pacman -Sy stunnel4 --noconfirm
+    sudo pacman -Sy udptunnel --noconfirm
+    sudo pacman -Sy autopsy --noconfirm
+    sudo pacman -Sy binwalk --noconfirm
+    sudo pacman -Sy chkrootkit --noconfirm
+    sudo pacman -Sy foremost --noconfirm
+    sudo pacman -Sy galleta --noconfirm
+    sudo pacman -Sy hashdeep --noconfirm
+    sudo pacman -Sy dc3dd --noconfirm
+    sudo pacman -Sy dcfldd --noconfirm
+    sudo pacman -Sy extundelete --noconfirm
+    sudo pacman -Sy missidentify --noconfirm
+    sudo pacman -Sy pst-utils --noconfirm
+    sudo pacman -Sy reglookup --noconfirm
+    sudo pacman -Sy ddrescue --noconfirm
+    sudo pacman -Sy guymager --noconfirm
+    sudo pacman -Sy pdfid --noconfirm
+    sudo pacman -Sy pdf-parser --noconfirm
+    sudo pacman -Sy foremost --noconfirm
+    sudo pacman -Sy magicrescue --noconfirm
+    sudo pacman -Sy pasco --noconfirm
+    sudo pacman -Sy pev --noconfirm
+    sudo pacman -Sy recoverjpeg --noconfirm
+    sudo pacman -Sy rifiuti --noconfirm
+    sudo pacman -Sy rifiuti2 --noconfirm
+    sudo pacman -Sy safecopy --noconfirm
+    sudo pacman -Sy calpel --noconfirm
+    sudo pacman -Sy scrounge-ntfs --noconfirm
+    sudo pacman -Sy cutycapt --noconfirm
+    sudo pacman -Sy pipal --noconfirm
+    sudo pacman -Sy recordmydesktop --noconfirm
+    echo "routersploit find in /(scriptlocation)/routerspoit, to run it write python3 rsf.py"
+}
