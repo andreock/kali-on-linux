@@ -3,6 +3,17 @@ function error() {
   exit 1
 }
 
+function install_metasploit() {
+    git clone https://github.com/threat9/routersploit
+    cd routersploit
+    python3 -m pip install -r requirements.txt
+    cd /tmp
+    curl https://raw.githubusercontent.com/rapid7/metasploit-omnibus/master/config/templates/metasploit-framework-wrappers/msfupdate.erb > msfinstall
+    chmod +x msfinstall
+    sudo ./msfinstall
+    cd
+}
+
 function add_repos() {
     echo "Installing blackarch repo..."
     curl -O https://blackarch.org/strap.sh
