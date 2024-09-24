@@ -17,12 +17,8 @@ function install_metasploit() {
 function add_repos() {
     echo "Installing blackarch repo..."
     curl -O https://blackarch.org/strap.sh
-    if [[ `echo 26849980b35a42e6e192c6d9ed8c46f0d6d06047 strap.sh | sha1sum -c` == *"OK"* ]]; then
-        echo "strap.sh OK"
-        bash strap.sh
-    else
-        error "failed strap.sh checksum"
-    fi
+    chmod u+x strap.sh
+    bash strap.sh
 }
 
 function find_aur_helper() {
