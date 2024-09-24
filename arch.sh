@@ -17,7 +17,6 @@ function install_metasploit() {
 function add_repos() {
     echo "Installing blackarch repo..."
     curl -O https://blackarch.org/strap.sh
-    whoami
     sudo sh -c "$(pwd)/strap.sh"
 }
 
