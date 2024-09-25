@@ -17,8 +17,7 @@ function install_metasploit() {
 function add_repos() {
     echo "Installing blackarch repo..."
     curl -O https://blackarch.org/strap.sh
-    chmod u+x strap.sh
-    bash strap.sh
+    sudo sh -c "$(pwd)/strap.sh"
 }
 
 function find_aur_helper() {
